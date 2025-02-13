@@ -13,7 +13,7 @@ if (fs.existsSync(projectPath)) {
 }
 
 console.log(`\n🚀 Creating TypeScript server project: ${projectName}\n`);
-fs.cpSync('template', projectPath, { recursive: true });
+fs.cpSync(path.resolve(__dirname, '../template'), projectPath, { recursive: true });
 
 console.log("📦 Copying project template folder...");
 execSync("npm init -y", { cwd: projectPath, stdio: "inherit" });
