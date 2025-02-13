@@ -17,7 +17,7 @@ This tool quickly sets up a fully configured **TypeScript + Express** project, s
 You don't need to install anything globally! Just use **npx**:
 
 ```sh
-npx create-ts-server-app my-app
+npx n3rdw1z4rd/create-ts-server-app my-app
 ```
 
 Replace `my-app` with your desired project name.
