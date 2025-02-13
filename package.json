@@ -1,0 +1,23 @@
+{
+    "name": "create-server-app",
+    "version": "0.1.0",
+    "description": "A CLI tool to generate a TypeScript server application with Express",
+    "main": "bin/create-server-app.js",
+    "bin": {
+        "create-server-app": "bin/create-server-app.js"
+    },
+    "files": [
+        "bin",
+        "template"
+    ],
+    "dependencies": {},
+    "devDependencies": {},
+    "keywords": [
+        "typescript",
+        "express",
+        "cli",
+        "generator"
+    ],
+    "author": "John Wakleuy <john.wakley@icloud.com>",
+    "license": "MIT"
+}
