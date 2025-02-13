@@ -10,7 +10,7 @@ This tool quickly sets up a fully configured **TypeScript + Express** project, s
 - `.env` support using `dotenv`
 - Nodemon for development
 - Pre-configured `tsconfig.json`
-- Includes a `server.d.ts` file for global declarations
+- Includes a `types.d.ts` file for global declarations
 
 ## 📦 Installation & Usage
 
@@ -29,17 +29,20 @@ After running the command, your project will be structured like this:
 ```
 my-app/
 │── src/
-│   ├── server.ts          # Main server file
 │   ├── routes/
-│   │   ├── index.ts       # Example route
-│   ├── config/
+│   │   ├── index.ts       # Entry point for all routes
+│   │   ├── test-page.ts   # And example test page - this is not a good example how to create your pages.
 │   ├── types/
-│   │   ├── server.d.ts    # Global TypeScript declarations
-│── .env                   # Environment variables
+│   │   ├── types.d.ts     # Global TypeScript declarations
+|   ├── main.ts            # Loads .env file and starts the server
+│   ├── server.ts          # Main server file
+│── .env                   # Dev environemnt variables
 │── .gitignore             # Ignore unnecessary files
+│── default.env            # Default environment variables
+│── nodemon.json           # Auto-restart server on changes
+│── package-lock.json      
 │── package.json           # Project metadata
 │── tsconfig.json          # TypeScript configuration
-│── nodemon.json           # Auto-restart server on changes
 ```
 
 ## 🏃 Running the Server
@@ -66,7 +69,7 @@ npm start
 Want to modify the template? You can fork this repo, adjust the `template/` folder, and publish your own version!
 
 ## 📜 License
-MIT License © 2025 Your Name
+MIT License © 2025 John Wakley
 
 ---
 
