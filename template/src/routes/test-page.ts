@@ -62,7 +62,7 @@ export const TestPage = (params: ServerParams) => routes.get('/', (req, res) => 
             <div class="app-container">
                 <div>
                     <p>Welcome to ${params.appName}!</p>
-                    <p>created by create-server-app
+                    <p>created by create-ts-server-app
                     <p>This page can be found in <code>src/routes/test-page.ts</code></p>
                 </div>
             </div>

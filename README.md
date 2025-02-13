@@ -1,4 +1,4 @@
-# create-ts-express
+# create-ts-server-app
 
 🚀 **A simple CLI tool to generate a TypeScript + Express server**
 
@@ -17,7 +17,7 @@ This tool quickly sets up a fully configured **TypeScript + Express** project, s
 You don't need to install anything globally! Just use **npx**:
 
 ```sh
-npx create-ts-express my-app
+npx create-ts-server-app my-app
 ```
 
 Replace `my-app` with your desired project name.
